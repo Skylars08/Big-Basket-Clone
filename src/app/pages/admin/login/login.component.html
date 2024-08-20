@@ -1,0 +1,31 @@
+<div class="parent">
+  <div class="container">
+    <div class="sign_in form_container">
+      <form>
+        <h1>Sign In</h1>
+        <div class="icons">
+          <a href=""><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <p>or use your email password</p>
+        <input class="email1" name="userName" [(ngModel)]="loginObj.userName" type="email" placeholder="Email" />
+        <p class="emailfield1 text">
+          <i class="fa-solid fa-circle-exclamation"></i> Please enter a valid
+          email-address
+        </p>
+        <div class="passdiv">
+          <input class="pass1" name="password" [(ngModel)]="loginObj.password" type="password" placeholder="Password" /><i class="fa fa-lock" aria-hidden="true"></i>
+
+        </div>
+        <p class="passfield1 text">
+          <i class="fa-solid fa-circle-exclamation"></i> Please enter a valid
+          password
+        </p>
+        <p class="forgetpass">Forget Your Password?</p>
+        <button type="button" (click)="onLogin()">SIGN IN</button>
+      </form>
+    </div>
+  </div>
+</div>
